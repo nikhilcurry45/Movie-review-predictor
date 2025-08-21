@@ -1,11 +1,12 @@
 from flask import Flask, render_template, request, jsonify
 import joblib
+import os
 
 app = Flask(__name__)
 
-# Load model + vectorizer
-model = joblib.load("movie_review_predictor\\sentiment_model.pkl")
-vectorizer = joblib.load("movie_review_predictor\\vectorizer.pkl")
+Base_DIR = os.path.dirname(os.path.abspath(__file__))
+model = joblib.load(os.path.join(Base_DIR, "sentiment_model.pkl"))
+vectorizer = joblib.load(os.path.join(Base_DIR, "vectorizer.pkl"))
 
 # Serve HTML page
 @app.route("/")
