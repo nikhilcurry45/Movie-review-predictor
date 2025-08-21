@@ -1,0 +1,68 @@
+.header{
+text-align: center;
+
+max-width: 500px;
+margin: auto;
+margin-top: 4vh;
+height: 600px;
+border-radius: 50px;
+padding: 40px;
+color:white;
+background-image: 
+    linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)),
+    url("/static/image1.jpg");
+}
+
+.header #p{
+font-size: 30px;
+font-family:'Times New Roman', Times, serif;
+}
+
+.header .inputbox{
+  margin-top: 200px;
+}
+
+.header .inputbox textarea{
+    width: 80%;
+    max-width: 400px;
+    height: 60px;
+    font-size: 1.5rem;
+    padding: 15px 20px;
+    border-radius: 15px;
+    border: none;
+    outline: none;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+    background: rgba(255,255,255,0.85);
+    color: #222;
+    transition: box-shadow 0.2s;
+    resize: none;
+}
+
+.btn{
+    margin-top: 100px;
+}
+
+.btn button{
+    width: 30%;
+    height: 70px;
+    font-size: large;
+    border: none;
+    border-radius: 10px;
+    background: rgba(108, 79, 250, 0.85);
+    cursor: pointer;
+    color: white;
+    font-family:cursive;
+}
+
+.btn button:hover {
+    transform: scale(1.2);
+    transition: transform 0.2s;
+}
+
+.btn button {
+    transition: transform 0.2s;
+}
+
+.btn button:not(:hover) {
+    transform: scale(1);
+}
